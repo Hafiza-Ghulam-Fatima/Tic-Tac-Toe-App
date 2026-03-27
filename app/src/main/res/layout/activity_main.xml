@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#1A1A2E">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic-Tac-Toe"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#E94560"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player X's Turn"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"/>
+
+    <GridLayout
+        android:id="@+id/gridBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_marginBottom="32dp">
+
+        <Button android:id="@+id/btn00" style="@style/CellButton"/>
+        <Button android:id="@+id/btn01" style="@style/CellButton"/>
+        <Button android:id="@+id/btn02" style="@style/CellButton"/>
+
+        <Button android:id="@+id/btn10" style="@style/CellButton"/>
+        <Button android:id="@+id/btn11" style="@style/CellButton"/>
+        <Button android:id="@+id/btn12" style="@style/CellButton"/>
+
+        <Button android:id="@+id/btn20" style="@style/CellButton"/>
+        <Button android:id="@+id/btn21" style="@style/CellButton"/>
+        <Button android:id="@+id/btn22" style="@style/CellButton"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="200dp"
+        android:layout_height="52dp"
+        android:text="RESTART"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E94560"/>
+
+</LinearLayout>
